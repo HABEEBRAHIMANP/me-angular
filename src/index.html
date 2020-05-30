@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MyApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="assets/css/chocolat.css" type="text/css" media="screen"><!-- chocolate css for gallery light box-->
+<!-- animation -->
+<link href="assets/css/animate.css" rel="stylesheet" type="text/css" media="all">
+<!-- //animation --> 
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- onlinefonts -->
+<link href="//fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
+<!-- //onlinefonts -->
+
+<script src="assets/js/jquery.chocolat.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.filtr-item a').Chocolat();
+			});
+		</script>
+	<!-- //PopUp-Box-JavaScript -->	
+	<!-- fliter-JavaScript -->
+		<script src="assets/js/jquery.filterizr.js"></script>
+		<script src="assets/js/controls.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.filtr-container').filterizr();
+			});
+		</script>
+	<!-- //fliter-JavaScript -->
+<script src="assets/js/jarallax.js"></script>
+<script src="assets/js/SmoothScroll.min.js"></script>
+<script type="text/javascript">
+	/* init Jarallax */
+	$('.jarallax').jarallax({
+		speed: 0.5,
+		imgWidth: 1366,
+		imgHeight: 768
+	})
+</script>
+<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="assets/js/easing.js"></script>
+<!-- //here ends scrolling icon -->
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
